@@ -1,17 +1,17 @@
 :root {
     --white: rgb(255, 255, 255);
+    --transWhite: rgb(255, 255, 255, 0.5);
     --lightblue: rgb(208, 214, 249);
     --spaceblue: rgb(11, 13, 23);
 }
 
-body, html {
-    background-image: url(Images/Bitmap.jpg);
+body {
+    background-image: url(Images/Home_Background.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    width: 100%;
-    height: 100%;
+    width: auto; 
     margin: 0%;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ body, html {
 }
 
 nav {
-    width: 100%;
+    width: 100vw;
     height: 6em;
     margin-top: 2em;
     display: flex;
@@ -44,18 +44,18 @@ nav {
 }
 
 .long-line{
-    width: 40%;
+    width: 35%;
     height: 1px;
     background-color: gray;
     float: left;
     opacity: 50%;
 }
 
-ul {
+.menu {
     margin: 0%;
     width: 55vw;
     height: 100%;
-    padding-left: 7em;
+    padding-left: 4em;
     display: flex;
     flex-direction: row;
     border-radius: 2px 0px 0px 2px;
@@ -64,8 +64,9 @@ ul {
 }
 
 .navBtn {
-    margin-right: 1.75em;
-    margin-left: 1.75em;
+    width: 12em;
+    margin-right: 0.5;
+    margin-left: 0.5em;
     padding: 0%;
     display: flex;
     flex-direction: column;
@@ -85,7 +86,7 @@ ul {
 
 .selected-line {
     margin: 0%;
-    width: 100%;
+    width: 70%;
     height: 2px;
 }
 
@@ -93,38 +94,54 @@ ul {
     background-color: rgb(255, 255, 255, 0.5);
 }
 
-/*.navBtn:hover ~ .selected-03 {
-    background-color: rgb(255, 255, 255, 0.5);
-}
-
-.navBtn:hover ~ .selected-04 {
-    background-color: rgb(255, 255, 255, 0.5);
-}*/
-
 #selected-01{
     background-color: white;
 }
+
+.menu-title {display: none;}
 /*nav.*/
 
 /*main:*/
 
 main {
-    width: 78vw;
-    height: 80vh;
+    width: 75vw;
+    height: 100%;
+    margin-top: 20px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: space-between;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    /*background-color: rgb(255, 255, 255, 0.5);*/
 }
 
-article {
-    width: 50%;
+#content{
+    width: 75vw;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.division {
+    width: auto;
+    min-width: 28rem;
     height: 65vh;
-    /*background-color: rgb(0, 255, 255, 0.5);*/
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+}
+
+#left-side {
+    min-width: 200px;
+}
+
+#right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    min-width: 250px;
 }
 
 .subtitle {
@@ -144,29 +161,19 @@ article {
 }
 
 .text {
-    width: 29vw;
+    max-width: 430px;
     font-family: 'Barlow', sans-serif;
     font-size: 17px;
     letter-spacing: normal;
-    text-align: justify;
+    text-align: left;
     color: var(--lightblue);
     line-height: 1.6;
 }
 
-.image-space {
-    width: 50%;
-    height: 65vh;
-    /*background-color: rgba(255, 0, 0, 0.5);*/
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
 .btn-explore {
-    width: 8em;
+    width: 250px;
+    min-width: 200px;
     aspect-ratio: 1/1;
-    margin: 0.3em;
     border-radius: 10em 10em 10em 10em ;
     border-color: rgb(255, 255, 255, 0);
     font-family: 'Bellefair', serif;
@@ -177,4 +184,123 @@ article {
     background-color: rgb(255, 255, 255, 0.2);
 }
 
-/*main./
+/*main.*/
+
+/*Pagina 01:*/
+
+#page01{
+    width: 75vw;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.titleNum{
+    font-weight: 700;
+    color: var(--transWhite);
+}
+
+#content-pg01 {
+    width: 75vw;
+    height: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.division-01 {
+    width: auto;
+    max-width: 420px;
+    height: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#ls-01{
+    justify-content: flex-end;
+}
+
+#planet-image {
+    width: 26em;
+    height: 26em;
+}
+
+.menu-pg01 {
+    width: 30vw;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.navBtn-01 .btn-text{
+    margin-bottom: 0.5em;
+}
+
+.navBtn-01{
+    width: auto;
+    margin-right: 2em;
+    margin-left: 0em;
+    padding: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: none;
+    border: 0px;
+    color: var(--lightblue);
+}
+
+.navBtn-01:hover .selected-line{
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.title-pg01 {
+    width: auto;
+    font-family: 'Bellefair', serif;
+    font-size: 100px;
+    font-weight: 300;
+    margin: 0em;
+    color: var(--white);
+}
+
+#footer-pg01{
+    /* max-width: 420px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#lineSeparator {
+    width: 100%;
+    height: 1px;
+    background-color: var(--transWhite);
+}
+
+.bottom-info{
+    margin-right: 4em;   
+}
+
+.bottom-info p {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;
+    color: var(--lightblue);
+}
+
+.bottom-info h2 {
+    margin: 0px;
+    font-family: 'Bellefair', serif;
+    font-weight: 100;
+    font-size: 26px;
+    color: var(--white);
+}
+
+
+/*Pagina 01.*/

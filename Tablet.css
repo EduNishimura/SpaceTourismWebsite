@@ -1,0 +1,221 @@
+:root {
+    --white: rgb(255, 255, 255);
+    --transWhite: rgb(255, 255, 255, 0.5);
+    --lightblue: rgb(208, 214, 249);
+    --spaceblue: rgb(11, 13, 23);
+}
+
+@media all and (max-width: 1115px) {
+
+    /* pagina01 */
+
+    #header{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #menuTitle{
+        font-size: 24px;
+    }
+
+    #page01{
+        width: 80vw;
+        height: 100%;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--transWhite);
+        flex-wrap: wrap;
+    }
+    
+    .division-01 {
+        width: auto;
+        max-width: 420px;
+        height: 470px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #ls-01{
+        justify-content: center;
+    }
+
+    .upper-cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-pg01{
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .navBtn-01{
+        width: auto;
+        margin-right: 1.5em;
+        margin-left: 1.5em;
+        padding: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        background: none;
+        border: 0px;
+        color: var(--lightblue);
+    }
+
+    #footer-pg01{
+        /* max-width: 420px; */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .bottom-info{
+        margin: 0%;   
+    }
+    /* pagina01 */
+}
+
+@media all and (max-width: 977px) {
+
+    body {
+        background-image: url(Images/tablet_HomeBG.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }    
+
+    nav {
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .lineMenu {display: none;}
+
+    .menu {
+        margin: 0%;
+        width: 55vw;
+        height: 100px;
+        padding-left: 2em;
+        display: flex;
+        flex-direction: row;
+        border-radius: 2px 0px 0px 2px;
+        background: rgb(255, 255, 255, 0.04);
+        backdrop-filter: blur(20px);
+    }
+
+    .menu b {
+        display: none;
+    }
+
+    .btn-text {
+        margin-bottom: 2.3rem;
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+    }
+
+    .lineMenu{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .long-line{
+        display: none;
+    }
+
+    main {
+        width: 80vw;
+        height: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+
+    #page00{
+        width: 80vw;
+        height: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgb(255, 255, 255, 0.5);
+    }
+
+    .division {
+        width: 100%;
+        height: 70vh;
+        /*background-color: rgb(0, 255, 255, 0.5);*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #right-side {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 24em;
+    }
+
+    .subtitle {
+        font-family: 'Barlow Condensed', sans-serif;
+        font-size: 28px;
+        letter-spacing: 4.75px;
+        margin: 0%;
+        text-align: center;
+        color: var(--lightblue);
+    }
+    
+    .title {
+        font-family: 'Bellefair', serif;
+        font-size: 150px;
+        font-weight: 350;
+        text-align: center;
+        margin: 0em;
+        color: var(--white);
+    }
+    
+    .text {
+        font-family: 'Barlow', sans-serif;
+        font-size: 17px;
+        letter-spacing: normal;
+        text-align: center;
+        color: var(--lightblue);
+        line-height: 1.6;
+    }
+
+    /* pagina01 */
+    #planet-image {
+        width: 21em;
+        height: 21em;
+    }
+}

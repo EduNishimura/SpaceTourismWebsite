@@ -9,53 +9,111 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300&family=Barlow:wght@300&family=Bellefair&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Tablet.css">
+    <link rel="stylesheet" href="mobile.css">
 </head>
-<body>
-    <nav>
+<body id="body">
+    <nav id="nav00">
         <img src="Images/Group 2.png" class="logo" alt="">
         <div class="lineMenu">
             <div class="long-line"></div>
-            <ul>
-                <!--<li>-->
-                    <button class="navBtn" onclick="">
-                        <p class="btn-text"><b>01 &nbsp;</b>HOME</p>
-                        <div class="selected-line" id="selected-01"></div>
-                    </button>
-                <!--</li>-->
-                <!--<li>-->
-                    <button class="navBtn">
-                        <p class="btn-text"><b>02 &nbsp;</b>DESTINATION</p>
-                        <div class="selected-line" id="selected-02"></div>
-                    </button>
-                <!--</li>-->
-                <!--<li>-->
-                    <button class="navBtn">
-                        <p class="btn-text"><b>03 &nbsp;</b>CREW</p>
-                        <div class="selected-line" id="selected-03"></div>
-                    </button>
-                <!--</li>-->
-                <!--<li>-->
-                    <button class="navBtn">
-                        <p class="btn-text"><b>04 &nbsp;</b>TECHNOLOGY</p>
-                        <div class="selected-line" id="selected-04"></div>
-                    </button>
-                <!--</li>-->
+            <ul class="menu">
+                <button class="navBtn" id="btn00" onclick="index.html">
+                    <p class="btn-text"><b>00 &nbsp;</b>HOME</p>
+                    <div class="selected-line" id="selected-01"></div>
+                </button>
+                <button class="navBtn" id="btn01" onclick="Page01()">
+                    <p class="btn-text"><b>01 &nbsp;</b>DESTINATION</p>
+                    <div class="selected-line" id="selected-02"></div>
+                </button>
+                <button class="navBtn" id="btn02">
+                    <p class="btn-text"><b>02 &nbsp;</b>CREW</p>
+                    <div class="selected-line" id="selected-03"></div>
+                </button>
+                <button class="navBtn" id="btn03">
+                    <p class="btn-text"><b>03 &nbsp;</b>TECHNOLOGY</p>
+                    <div class="selected-line" id="selected-04"></div>
+                </button>
             </ul>
         </div>
-    </nav>
-    <main>
-        <article>
-            <p class="subtitle">SO, YOU WANT TO TRAVEL TO</p>
-            <h1 class="title">SPACE</h1>
-            <p class="text">
-                Let’s face it; if you want to go to space, you might as well genuinely
-                go to outer space and not hover kind of on the edge of it.
-                Well sit back, and relax because we’ll give you a truly out of this world experience!
-            </p>
-        </article>
-        <div class="image-space">
-            <button class="btn-explore">EXPLORE</button>
+        <div class="burguer">
+            <div class="line-1"></div>
+            <div class="line-2"></div>
+            <div class="line-3"></div>
         </div>
+    </nav>  
+    
+    <main id="page00">
+        <content id="content">
+            <article class="division" id="left-side">
+                <p class="subtitle">SO, YOU WANT TO TRAVEL TO</p>
+                <h1 class="title">SPACE</h1>
+                <p class="text">
+                    Let’s face it; if you want to go to space, you might as well genuinely
+                    go to outer space and not hover kind of on the edge of it.
+                    Well sit back, and relax because we’ll give you a truly out of this world experience!
+                </p>
+            </article>
+            <div class="division" id="right-side">
+                <button class="btn-explore">EXPLORE</button>
+            </div>
+        </content>
     </main>
+
+    <!-- segunda pagina -->
+    <main id="page01">
+        <header id="header">
+            <p class="subtitle" id="menuTitle">
+                <b class="titleNum">01 &nbsp;</b>
+                 PICK YOUR DESTINATION
+            </p>
+        </header>
+        <content id="content-pg01">
+            <div class="division-01" id="ls-01">
+                <img src="images/moon.png" id="planet-image" alt="">
+            </div>
+            <article class="division-01" id="rs-01">
+                <div class="upper-cont">
+                    <ul class="menu-pg01">
+                        <button class="navBtn-01" id="btn-01-00">
+                            <p class="btn-text">MOON</p>
+                            <div class="selected-line" id="selected-01"></div>
+                        </button>
+                        <button class="navBtn-01" id="btn-01-01">
+                            <p class="btn-text">MARS</p>
+                            <div class="selected-line" id="selected-02"></div>
+                        </button>
+                        <button class="navBtn-01" id="btn-01-02">
+                            <p class="btn-text">EUROPA</p>
+                            <div class="selected-line" id="selected-03"></div>
+                        </button>
+                        <button class="navBtn-01" id="btn-01-03">
+                            <p class="btn-text">TITAN</p>
+                            <div class="selected-line" id="selected-04"></div>
+                        </button>
+                    </ul>
+                    <h1 class="title-pg01">MOON</h1>
+                    <p class="text">
+                        See our planet as you’ve never seen it before. 
+                        A perfect relaxing trip away to help regain perspective and come back refreshed.  
+                        While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.
+                    </p>
+                </div>
+                <div id="lineSeparator"></div>
+                <footer id="footer-pg01">
+                    <div class="bottom-info">
+                        <p>AVG. DISTANCE</p>
+                        <h2>384,400 KM</h2>
+                    </div>
+                    <div class="bottom-info">
+                        <p>EST. TRAVEL TIME</p>
+                        <h2>3 DAYS</h2>
+                    </div>
+                </footer>
+            </article>
+        </content>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
